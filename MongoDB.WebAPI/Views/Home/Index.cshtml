@@ -1,0 +1,97 @@
+﻿<div class="jumbotron">
+    <h1>OB嚴選品牌旗艦店</h1>
+    <p class="lead">MongoDB 測試</p>
+    <p></p>
+    <button type="button" value="1" class="btn btn-danger">查看內容</button>
+    <button type="button" value="2" class="btn btn-primary">搜尋</button>
+    <button type="button" value="3" class="btn btn-success">加到購物車</button>
+    <button type="button" value="4" class="btn btn-info">加到願望清單</button>
+    <button type="button" value="5" class="btn btn-warning">開始結帳</button>
+    <button type="button" value="6" class="btn btn-danger">新增付款資料</button>
+    <button type="button" value="7" class="btn btn-primary">購買</button>
+    <button type="button" value="8" class="btn btn-success">潛在顧客</button>
+    <button type="button" value="9" class="btn btn-info">完成註冊</button>
+</div>
+@*<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+            is an ideal platform for building RESTful applications on the .NET Framework.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+    </div>
+</div>*@
+
+<div>
+    <iframe src="https://www.obdesign.com.tw/product.aspx?seriesID=AB2729-&no=6964" width="100%" frameborder="0" allowtransparency="true" id="mainframe" onload="Javascript:SetCwinHeight()" />
+</div>
+
+
+@section scripts {
+    <script src="~/Scripts/obga.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var data;
+
+            $('button').on('click', function () {
+                switch ($(this).val()) {
+                    case "1": // 查看內容
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網111111111", ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色" };
+                        break
+                    case "2": // 搜尋
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", KeyWord: "上衣" };
+                        break
+                    case "3": // 加到購物車
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", UserId: { ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色", Color: "白", Size: "M", Quantity: 1, Price: 319, Subtotal: 319 } };
+                        break
+                    case "4": // 加到願望清單
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色", Price: 199 };
+                        break
+                    case "5": // 開始結帳
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", Product: [{ ProductId: "A5151", ProductName: "童年記憶~寶藍系菱格車線動物印圖連帽長版上衣", Color: "白", Size: "M", Quantity: 1, Price: 199 }, { ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色", Color: "白", Size: "M", Quantity: 1, Price: 319 }] };
+                        break
+                    case "6": // 新增付款資料
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", UserName: "橘熊科技股份有限公司", Tel: "0277226870", Address: "台北市南港區八德路四段768巷1弄18號13樓", PaymentType: "7-11" };
+                        break
+                    case "7": // 購買
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", CouponMoney: 100, FeedbackMoney: 100, ShoppingMoney: 100, TotalAmount: 1000 };
+                        break
+                    case "8": // 潛在顧客
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", UserName: "橘熊科技股份有限公司", Tel: "0277226870", Email: "ob@obdesign.com.tw" };
+                        break
+                    case "9": // 完成註冊
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", UserName: "橘熊科技股份有限公司", Sex: "女", Tel: "0277226870", Birthday: "2017-01-05", Email: "ob@obdesign.com.tw" };
+                        break
+                }
+                postobgamdb($(this).val(), data);
+            });
+
+        });
+
+        function SetCwinHeight() {
+            var iframeid = document.getElementById("mainframe"); //iframe id
+            if (document.getElementById) {
+                if (iframeid && !window.opera) {
+                    if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight) {
+                        iframeid.height = iframeid.contentDocument.body.offsetHeight;
+                    }
+                    else if (iframeid.Document && iframeid.Document.body.scrollHeight) {
+                        iframeid.height = iframeid.Document.body.scrollHeight;
+                    }
+                }
+            }
+        };
+    </script>
+}
