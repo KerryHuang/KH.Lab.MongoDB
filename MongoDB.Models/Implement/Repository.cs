@@ -29,7 +29,7 @@ namespace MongoDB.Models.Implement
             get;
             private set;
         }
-        protected static string _connectionString = "mongodb://localhost:27017";
+        protected static string _connectionString = "mongodb://192.168.1.101:27017";
         protected static string _database = "OBDB";
 
         public Repository()

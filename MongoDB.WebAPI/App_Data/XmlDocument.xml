@@ -1180,5 +1180,68 @@
             Application_Start
             </summary>
         </member>
+        <member name="T:MongoDB.WebAPI.Lib.OBGALib">
+            <summary>
+            發送資料類別
+            </summary>
+        </member>
+        <member name="M:MongoDB.WebAPI.Lib.OBGALib.Post(MongoDB.WebAPI.Lib.OBGALib.Type,System.String)">
+            <summary>
+            發送資料
+            </summary>
+            <param name="type">類別</param>
+            <param name="jsondata">Json資料</param>
+            <returns></returns>
+        </member>
+        <member name="T:MongoDB.WebAPI.Lib.OBGALib.Type">
+            <summary>
+            類別
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.ViewContent">
+            <summary>
+            查看內容
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.Search">
+            <summary>
+            搜尋
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.AddToCart">
+            <summary>
+            加到購物車
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.AddToWishlist">
+            <summary>
+            加到願望清單
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.InitiateCheckout">
+            <summary>
+            開始結帳
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.AddPaymentInfo">
+            <summary>
+            新增付款資料
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.Purchase">
+            <summary>
+            購買
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.Lead">
+            <summary>
+            潛在顧客
+            </summary>
+        </member>
+        <member name="F:MongoDB.WebAPI.Lib.OBGALib.Type.CompleteRegistration">
+            <summary>
+            完成註冊
+            </summary>
+        </member>
     </members>
 </doc>

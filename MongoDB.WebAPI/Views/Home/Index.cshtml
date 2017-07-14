@@ -34,18 +34,14 @@
     </div>
 </div>*@
 
-<div>
-    <iframe src="https://www.obdesign.com.tw/product.aspx?seriesID=AB2729-&no=6964" width="100%" frameborder="0" allowtransparency="true" id="mainframe" onload="Javascript:SetCwinHeight()" />
-</div>
-
 
 @section scripts {
     <script src="~/Scripts/obga.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            var data;
-
+            
             $('button').on('click', function () {
+                var data;
                 switch ($(this).val()) {
                     case "1": // 查看內容
                         data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網111111111", ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色" };
@@ -54,7 +50,7 @@
                         data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", KeyWord: "上衣" };
                         break
                     case "3": // 加到購物車
-                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", UserId: { ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色", Color: "白", Size: "M", Quantity: 1, Price: 319, Subtotal: 319 } };
+                        data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", Product: { ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色", Color: "白", Size: "M", Quantity: 1, Price: 319, Subtotal: 319 } };
                         break
                     case "4": // 加到願望清單
                         data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", ProductId: "K129091", ProductName: "韓版圓領不規則感豹紋口袋長版上衣‧2色", Price: 199 };
@@ -74,24 +70,12 @@
                     case "9": // 完成註冊
                         data = { CookeId: "qwertyuiopasdfghjjvbx", UserId: "官網123456789", UserName: "橘熊科技股份有限公司", Sex: "女", Tel: "0277226870", Birthday: "2017-01-05", Email: "ob@obdesign.com.tw" };
                         break
+                    default:
+                        break;
                 }
-                postobgamdb($(this).val(), data);
+                $(this).PostToGA($(this).val(), data);
             });
 
         });
-
-        function SetCwinHeight() {
-            var iframeid = document.getElementById("mainframe"); //iframe id
-            if (document.getElementById) {
-                if (iframeid && !window.opera) {
-                    if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight) {
-                        iframeid.height = iframeid.contentDocument.body.offsetHeight;
-                    }
-                    else if (iframeid.Document && iframeid.Document.body.scrollHeight) {
-                        iframeid.height = iframeid.Document.body.scrollHeight;
-                    }
-                }
-            }
-        };
     </script>
 }
