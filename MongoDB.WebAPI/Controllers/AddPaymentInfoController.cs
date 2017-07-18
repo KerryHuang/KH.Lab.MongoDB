@@ -18,7 +18,7 @@ namespace MongoDB.WebAPI.Controllers
     public class AddPaymentInfoController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 新增付款資料 Get 方法
         /// </summary>
         /// <param name="CookeId">CookeId</param>
         /// <param name="UserId">使用者</param>
@@ -26,7 +26,7 @@ namespace MongoDB.WebAPI.Controllers
         /// <param name="Tel">收件人電話</param>
         /// <param name="Address">收件人地址</param>
         /// <param name="PaymentType">付款方式</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, string UserName, string Tel, string Address, string PaymentType)
         {
@@ -55,10 +55,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "UserName": "橘熊科技股份有限公司", "Tel": "0277226870", "Address": "台北市南港區八德路四段768巷1弄18號13樓", "PaymentType": "7-11" }
+        /// 新增付款資料 Post 方法
         /// </summary>
-        /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",UserName:"收件人",Tel:"收件人電話",Address:"收件人地址",PaymentType:"付款方式"}</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(AddPaymentInfo value)
         {

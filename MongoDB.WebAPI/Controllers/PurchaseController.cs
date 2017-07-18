@@ -18,7 +18,7 @@ namespace MongoDB.WebAPI.Controllers
     public class PurchaseController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 購買 Get 方法
         /// </summary>
         /// <param name="CookeId">CookeId</param>
         /// <param name="UserId">使用者</param>
@@ -26,7 +26,7 @@ namespace MongoDB.WebAPI.Controllers
         /// <param name="FeedbackMoney">使用回鐀金</param>
         /// <param name="ShoppingMoney">使用購物金</param>
         /// <param name="TotalAmount">總金額</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, int CouponMoney, int FeedbackMoney, int ShoppingMoney, int TotalAmount)
         {
@@ -55,10 +55,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "CouponMoney": 100, "FeedbackMoney": 100, "ShoppingMoney": 100, "TotalAmount": 1000 }
+        /// 購買 Post 方法
         /// </summary>
-        /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",CouponMoney:使用折價卷,FeedbackMoney:使用購物金,ShoppingMoney:使用購物金,TotalAmount:總金額}</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(Purchase value)
         {

@@ -18,14 +18,14 @@ namespace MongoDB.WebAPI.Controllers
     public class LeadController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 潛在顧客 Get 方法
         /// </summary>
         /// <param name="CookeId">CookeId</param>
         /// <param name="UserId">使用者</param>
         /// <param name="UserName">使用者名稱</param>
         /// <param name="Tel">電話</param>
         /// <param name="Email">郵件</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, string UserName, string Tel, string Email)
         {
@@ -53,10 +53,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "UserName": "橘熊科技股份有限公司", "Tel": "0277226870", "Email": "ob@obdesign.com.tw" }
+        /// 潛在顧客 Post 方法
         /// </summary>
-        /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",UserName:"使用者名稱",Tel:"電話",Email:"郵件"}</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(Lead value)
         {

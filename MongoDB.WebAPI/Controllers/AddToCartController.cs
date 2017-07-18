@@ -19,7 +19,7 @@ namespace MongoDB.WebAPI.Controllers
     public class AddToCartController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 加到購物車 Get 方法
         /// </summary>
         /// <param name="CookeId">CookeId</param>
         /// <param name="UserId">使用者</param>
@@ -29,7 +29,7 @@ namespace MongoDB.WebAPI.Controllers
         /// <param name="Size">尺寸</param>
         /// <param name="Quantity">數量</param>
         /// <param name="Price">價格</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, string ProductId, string ProductName, string Color, string Size, int Quantity, double Price)
         {
@@ -63,10 +63,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{"CookeId":"qwertyuiopasdfghjjvbx","UserId":"官網123456789","Product":{"ProductId":"K129091","ProductName":"韓版圓領不規則感豹紋口袋長版上衣‧2色","Color":"白","Size":"M","Quantity":1,"Price":319,"Subtotal":319}}
+        /// 加到購物車 Post 方法
         /// </summary>
-        /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",Product:{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格}}</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(AddToCart value)
         {

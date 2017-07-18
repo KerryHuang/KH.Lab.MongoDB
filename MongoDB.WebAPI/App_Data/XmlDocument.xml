@@ -957,7 +957,7 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.AddPaymentInfoController.Get(System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            Get 方法
+            新增付款資料 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
@@ -965,14 +965,14 @@
             <param name="Tel">收件人電話</param>
             <param name="Address">收件人地址</param>
             <param name="PaymentType">付款方式</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.AddPaymentInfoController.Post(MongoDB.Models.ViewModels.AddPaymentInfo)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "UserName": "橘熊科技股份有限公司", "Tel": "0277226870", "Address": "台北市南港區八德路四段768巷1弄18號13樓", "PaymentType": "7-11" }
+            新增付款資料 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",UserName:"收件人",Tel:"收件人電話",Address:"收件人地址",PaymentType:"付款方式"}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.AddToCartController">
             <summary>
@@ -981,7 +981,7 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.AddToCartController.Get(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Double)">
             <summary>
-            Get 方法
+            加到購物車 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
@@ -991,14 +991,14 @@
             <param name="Size">尺寸</param>
             <param name="Quantity">數量</param>
             <param name="Price">價格</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.AddToCartController.Post(MongoDB.Models.ViewModels.AddToCart)">
             <summary>
-            Post 方法，範例：{"CookeId":"qwertyuiopasdfghjjvbx","UserId":"官網123456789","Product":{"ProductId":"K129091","ProductName":"韓版圓領不規則感豹紋口袋長版上衣‧2色","Color":"白","Size":"M","Quantity":1,"Price":319,"Subtotal":319}}
+            加到購物車 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",Product:{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格}}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.AddToWishlistController">
             <summary>
@@ -1007,21 +1007,21 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.AddToWishlistController.Get(System.String,System.String,System.String,System.String,System.Double)">
             <summary>
-            Get 方法
+            加到願望清單 Get 方法
             </summary>
             <param name="CookeId"></param>
             <param name="UserId">使用者</param>
             <param name="ProductId">產品編號</param>
             <param name="ProductName">產品名稱</param>
             <param name="Price">價格</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.AddToWishlistController.Post(MongoDB.Models.ViewModels.AddToWishlist)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色", "Price": 199 }
+            加到願望清單 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",ProductId:"產品編號",ProductName:"產品名稱",Price:價格}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.CompleteRegistrationController">
             <summary>
@@ -1030,7 +1030,7 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.CompleteRegistrationController.Get(System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String)">
             <summary>
-            Get 方法
+            完成註冊 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
@@ -1039,14 +1039,14 @@
             <param name="Tel">電話</param>
             <param name="Birthday">生日</param>
             <param name="Email">郵件</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.CompleteRegistrationController.Post(MongoDB.Models.ViewModels.CompleteRegistration)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "UserName": "橘熊科技股份有限公司", "Sex": "女", "Tel": "0277226870", "Birthday": "2017-01-05", "Email": "ob@obdesign.com.tw" }
+            完成註冊 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",UserName:"使用者名稱",Sex:"性別",Tel:"電話",Birthday:"生日",Email:"郵件"}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.HomeController">
             <summary>
@@ -1066,19 +1066,19 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.InitiateCheckoutController.Get(System.String,System.String,System.String)">
             <summary>
-            Get 方法
+            開始結帳 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
-            <param name="Products">產品列，範例：[{"ProductId": "A5151", "ProductName": "童年記憶~寶藍系菱格車線動物印圖連帽長版上衣", "Color": "白", "Size": "M", "Quantity": 1, "Price": 199},{ "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色", "Color": "白", "Size": "M", "Quantity": 1, "Price": 319 }]</param>
+            <param name="Products">產品列，範例：[{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格},{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格}]</param>
             <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.InitiateCheckoutController.Post(MongoDB.Models.ViewModels.InitiateCheckout)">
             <summary>
-            Post 方法，範例：{"CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "Product": [{"ProductId": "A5151", "ProductName": "童年記憶~寶藍系菱格車線動物印圖連帽長版上衣", "Color": "白", "Size": "M", "Quantity": 1, "Price": 199},{ "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色", "Color": "白", "Size": "M", "Quantity": 1, "Price": 319 }] }
+            開始結帳 Post 方法，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",Product:[{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格},{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格}] }
             </summary>
             <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.LeadController">
             <summary>
@@ -1087,21 +1087,21 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.LeadController.Get(System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            Get 方法
+            潛在顧客 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
             <param name="UserName">使用者名稱</param>
             <param name="Tel">電話</param>
             <param name="Email">郵件</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.LeadController.Post(MongoDB.Models.ViewModels.Lead)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "UserName": "橘熊科技股份有限公司", "Tel": "0277226870", "Email": "ob@obdesign.com.tw" }
+            潛在顧客 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",UserName:"使用者名稱",Tel:"電話",Email:"郵件"}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.PurchaseController">
             <summary>
@@ -1110,7 +1110,7 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.PurchaseController.Get(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
-            Get 方法
+            購買 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
@@ -1118,14 +1118,14 @@
             <param name="FeedbackMoney">使用回鐀金</param>
             <param name="ShoppingMoney">使用購物金</param>
             <param name="TotalAmount">總金額</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.PurchaseController.Post(MongoDB.Models.ViewModels.Purchase)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "CouponMoney": 100, "FeedbackMoney": 100, "ShoppingMoney": 100, "TotalAmount": 1000 }
+            購買 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",CouponMoney:使用折價卷,FeedbackMoney:使用購物金,ShoppingMoney:使用購物金,TotalAmount:總金額}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.SearchController">
             <summary>
@@ -1134,19 +1134,19 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.SearchController.Get(System.String,System.String,System.String)">
             <summary>
-            Get 方法
+            搜尋 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
             <param name="KeyWord">關鍵字</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.SearchController.Post(MongoDB.Models.ViewModels.Search)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "KeyWord": "上衣" }
+            搜尋 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",KeyWord:"關鍵字"}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.ViewContentController">
             <summary>
@@ -1155,20 +1155,20 @@
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.ViewContentController.Get(System.String,System.String,System.String,System.String)">
             <summary>
-            Get 方法
+            查看內容 Get 方法
             </summary>
             <param name="CookeId">CookeId</param>
             <param name="UserId">使用者</param>
             <param name="ProductId">產品編號</param>
             <param name="ProductName">產品名稱</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <returns></returns>
         </member>
         <member name="M:MongoDB.WebAPI.Controllers.ViewContentController.Post(MongoDB.Models.ViewModels.ViewContent)">
             <summary>
-            Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色" }
+            查看內容 Post 方法
             </summary>
-            <param name="value">Json</param>
-            <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+            <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",ProductId:"產品編號",ProductName:"產品名稱"}</param>
+            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.WebApiApplication">
             <summary>

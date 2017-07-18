@@ -18,12 +18,12 @@ namespace MongoDB.WebAPI.Controllers
     public class SearchController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 搜尋 Get 方法
         /// </summary>
         /// <param name="CookeId">CookeId</param>
         /// <param name="UserId">使用者</param>
         /// <param name="KeyWord">關鍵字</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, string KeyWord)
         {
@@ -49,10 +49,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "KeyWord": "上衣" }
+        /// 搜尋 Post 方法
         /// </summary>
-        /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",KeyWord:"關鍵字"}</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(Search value)
         {

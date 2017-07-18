@@ -18,11 +18,11 @@ namespace MongoDB.WebAPI.Controllers
     public class InitiateCheckoutController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 開始結帳 Get 方法
         /// </summary>
         /// <param name="CookeId">CookeId</param>
         /// <param name="UserId">使用者</param>
-        /// <param name="Products">產品列，範例：[{"ProductId": "A5151", "ProductName": "童年記憶~寶藍系菱格車線動物印圖連帽長版上衣", "Color": "白", "Size": "M", "Quantity": 1, "Price": 199},{ "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色", "Color": "白", "Size": "M", "Quantity": 1, "Price": 319 }]</param>
+        /// <param name="Products">產品列，範例：[{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格},{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格}]</param>
         /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, string Products)
@@ -49,10 +49,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{"CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "Product": [{"ProductId": "A5151", "ProductName": "童年記憶~寶藍系菱格車線動物印圖連帽長版上衣", "Color": "白", "Size": "M", "Quantity": 1, "Price": 199},{ "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色", "Color": "白", "Size": "M", "Quantity": 1, "Price": 319 }] }
+        /// 開始結帳 Post 方法，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",Product:[{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格},{ProductId:"產品編號",ProductName:"產品名稱",Color:"顏色",Size:"尺寸",Quantity:數量,Price:價格}] }
         /// </summary>
         /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(InitiateCheckout value)
         {

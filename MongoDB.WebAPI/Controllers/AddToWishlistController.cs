@@ -18,14 +18,14 @@ namespace MongoDB.WebAPI.Controllers
     public class AddToWishlistController : ApiController
     {
         /// <summary>
-        /// Get 方法
+        /// 加到願望清單 Get 方法
         /// </summary>
         /// <param name="CookeId"></param>
         /// <param name="UserId">使用者</param>
         /// <param name="ProductId">產品編號</param>
         /// <param name="ProductName">產品名稱</param>
         /// <param name="Price">價格</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IHttpActionResult> Get(string CookeId, string UserId, string ProductId, string ProductName, double Price)
         {
@@ -53,10 +53,10 @@ namespace MongoDB.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Post 方法，範例：{ "CookeId": "qwertyuiopasdfghjjvbx", "UserId": "官網123456789", "ProductId": "K129091", "ProductName": "韓版圓領不規則感豹紋口袋長版上衣‧2色", "Price": 199 }
+        /// 加到願望清單 Post 方法
         /// </summary>
-        /// <param name="value">Json</param>
-        /// <returns>Json 範例：{ "Valid": true, "Error": "string" }</returns>
+        /// <param name="value">Json，範例：{CookeId:"ykvj01xtgnnibglou2m0igb2",UserId:"使用者",ProductId:"產品編號",ProductName:"產品名稱",Price:價格}</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IHttpActionResult> Post(AddToWishlist value)
         {
