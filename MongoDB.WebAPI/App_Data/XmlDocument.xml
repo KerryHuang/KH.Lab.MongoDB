@@ -58,11 +58,6 @@
             </summary>
             <param name="config"></param>
         </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ApiDescriptionExtensions">
-            <summary>
-            ApiDescriptionExtensions
-            </summary>
-        </member>
         <member name="M:MongoDB.WebAPI.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
             <summary>
             Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
@@ -77,72 +72,9 @@
             or you can provide the samples for the requests/responses.
             </summary>
         </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.HelpPageConfig.Register(System.Web.Http.HttpConfiguration)">
-            <summary>
-            Register
-            </summary>
-            <param name="config"></param>
-        </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController">
             <summary>
             The controller that will handle requests for the help page.
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController.#ctor">
-            <summary>
-            HelpController
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController.#ctor(System.Web.Http.HttpConfiguration)">
-            <summary>
-            HelpController
-            </summary>
-            <param name="config"></param>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController.Index">
-            <summary>
-            Index
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController.Api(System.String)">
-            <summary>
-            Api
-            </summary>
-            <param name="apiId"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController.ResourceModel(System.String)">
-            <summary>
-            ResourceModel
-            </summary>
-            <param name="modelName"></param>
-            <returns></returns>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.Controllers.HelpController.Configuration">
-            <summary>
-            Configuration
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.HelpPageAreaRegistration">
-            <summary>
-            HelpPageAreaRegistration
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.HelpPageAreaRegistration.RegisterArea(System.Web.Mvc.AreaRegistrationContext)">
-            <summary>
-            RegisterArea
-            </summary>
-            <param name="context"></param>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageAreaRegistration.AreaName">
-            <summary>
-            AreaName
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.HelpPageConfigurationExtensions">
-            <summary>
-            HelpPageConfigurationExtensions
             </summary>
         </member>
         <member name="M:MongoDB.WebAPI.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
@@ -291,212 +223,19 @@
             An <see cref="T:MongoDB.WebAPI.Areas.HelpPage.Models.HelpPageApiModel"/>
             </returns>
         </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.CollectionModelDescription">
-            <summary>
-            CollectionModelDescription
-            </summary>
-        </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescription">
             <summary>
             Describes a type model.
             </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescription.Documentation">
-            <summary>
-            Documentation
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescription.ModelType">
-            <summary>
-            ModelType
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescription.Name">
-            <summary>
-            Name
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.CollectionModelDescription.ElementDescription">
-            <summary>
-            ElementDescription
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription">
-            <summary>
-            ComplexTypeModelDescription
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.#ctor">
-            <summary>
-            ComplexTypeModelDescription
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.Properties">
-            <summary>
-            Properties
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.DictionaryModelDescription">
-            <summary>
-            DictionaryModelDescription
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription">
-            <summary>
-            KeyValuePairModelDescription
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.KeyModelDescription">
-            <summary>
-            KeyModelDescription
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.ValueModelDescription">
-            <summary>
-            ValueModelDescription
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription">
-            <summary>
-            EnumTypeModelDescription
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.#ctor">
-            <summary>
-            EnumTypeModelDescription
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.Values">
-            <summary>
-            Values
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumValueDescription">
-            <summary>
-            EnumValueDescription
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumValueDescription.Documentation">
-            <summary>
-            Documentation
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumValueDescription.Name">
-            <summary>
-            Name
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.EnumValueDescription.Value">
-            <summary>
-            Value
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider">
-            <summary>
-            IModelDocumentationProvider
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider.GetDocumentation(System.Reflection.MemberInfo)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="member"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider.GetDocumentation(System.Type)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator">
             <summary>
             Generates model descriptions for given types.
             </summary>
         </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.#ctor(System.Web.Http.HttpConfiguration)">
-            <summary>
-            ModelDescriptionGenerator
-            </summary>
-            <param name="config"></param>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)">
-            <summary>
-            GetOrCreateModelDescription
-            </summary>
-            <param name="modelType"></param>
-            <returns></returns>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GeneratedModels">
-            <summary>
-            GeneratedModels
-            </summary>
-        </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelNameAttribute">
             <summary>
             Use this attribute to change the name of the <see cref="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelDescription"/> generated for a type.
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelNameAttribute.#ctor(System.String)">
-            <summary>
-            ModelNameAttribute
-            </summary>
-            <param name="name"></param>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ModelNameAttribute.Name">
-            <summary>
-            Name
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterAnnotation">
-            <summary>
-            ParameterAnnotation
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.AnnotationAttribute">
-            <summary>
-            AnnotationAttribute
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.Documentation">
-            <summary>
-            Documentation
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription">
-            <summary>
-            ParameterDescription
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription.#ctor">
-            <summary>
-            ParameterDescription
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription.Annotations">
-            <summary>
-            Annotations
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription.Documentation">
-            <summary>
-            Documentation
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription.Name">
-            <summary>
-            Name
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.ParameterDescription.TypeDescription">
-            <summary>
-            TypeDescription
-            </summary>
-        </member>
-        <member name="T:MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions.SimpleTypeModelDescription">
-            <summary>
-            SimpleTypeModelDescription
             </summary>
         </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.Models.HelpPageApiModel">
@@ -568,6 +307,31 @@
             <summary>
             Initializes a new instance of the <see cref="T:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator"/> class.
             </summary>
+        </member>
+        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes">
+            <summary>
+            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
+            </summary>
+        </member>
+        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples">
+            <summary>
+            Gets the objects that are used directly as samples for certain actions.
+            </summary>
+        </member>
+        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects">
+            <summary>
+            Gets the objects that are serialized as samples by the supported formatters.
+            </summary>
+        </member>
+        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories">
+            <summary>
+            Gets factories for the objects that the supported formatters will serialize as samples. Processed in order,
+            stopping when the factory successfully returns a non-<see langref="null"/> object.
+            </summary>
+            <remarks>
+            Collection includes just <see cref="M:MongoDB.WebAPI.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)"/> initially. Use
+            <code>SampleObjectFactories.Insert(0, func)</code> to provide an override and
+            <code>SampleObjectFactories.Add(func)</code> to provide a fallback.</remarks>
         </member>
         <member name="M:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)">
             <summary>
@@ -642,31 +406,6 @@
             <param name="mediaType">Type of the media.</param>
             <returns></returns>
         </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes">
-            <summary>
-            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples">
-            <summary>
-            Gets the objects that are used directly as samples for certain actions.
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects">
-            <summary>
-            Gets the objects that are serialized as samples by the supported formatters.
-            </summary>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories">
-            <summary>
-            Gets factories for the objects that the supported formatters will serialize as samples. Processed in order,
-            stopping when the factory successfully returns a non-<see langref="null"/> object.
-            </summary>
-            <remarks>
-            Collection includes just <see cref="M:MongoDB.WebAPI.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)"/> initially. Use
-            <code>SampleObjectFactories.Insert(0, func)</code> to provide an override and
-            <code>SampleObjectFactories.Add(func)</code> to provide a fallback.</remarks>
-        </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey">
             <summary>
             This is used to identify the place where the sample should be applied.
@@ -704,19 +443,6 @@
             <param name="actionName">Name of the action.</param>
             <param name="parameterNames">The parameter names.</param>
         </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey.Equals(System.Object)">
-            <summary>
-            Equals
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey.GetHashCode">
-            <summary>
-            GetHashCode
-            </summary>
-            <returns></returns>
-        </member>
         <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey.ControllerName">
             <summary>
             Gets the name of the controller.
@@ -746,11 +472,6 @@
             Gets the parameter names.
             </summary>
         </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey.ParameterType">
-            <summary>
-            ParameterType
-            </summary>
-        </member>
         <member name="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey.SampleDirection">
             <summary>
             Gets the <see cref="P:MongoDB.WebAPI.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.
@@ -767,63 +488,9 @@
             </summary>
             <param name="src">The URL of an image.</param>
         </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ImageSample.Equals(System.Object)">
-            <summary>
-            Equals
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ImageSample.GetHashCode">
-            <summary>
-            GetHashCode
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.ImageSample.ToString">
-            <summary>
-            ToString
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.ImageSample.Src">
-            <summary>
-            Src
-            </summary>
-        </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.InvalidSample">
             <summary>
             This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.InvalidSample.#ctor(System.String)">
-            <summary>
-            InvalidSample
-            </summary>
-            <param name="errorMessage"></param>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.InvalidSample.Equals(System.Object)">
-            <summary>
-            Equals
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.InvalidSample.GetHashCode">
-            <summary>
-            GetHashCode
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.InvalidSample.ToString">
-            <summary>
-            ToString
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.InvalidSample.ErrorMessage">
-            <summary>
-            ErrorMessage
             </summary>
         </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.ObjectGenerator">
@@ -852,49 +519,9 @@
             Indicates whether the sample is used for request or response
             </summary>
         </member>
-        <member name="F:MongoDB.WebAPI.Areas.HelpPage.SampleDirection.Request">
-            <summary>
-            Request
-            </summary>
-        </member>
-        <member name="F:MongoDB.WebAPI.Areas.HelpPage.SampleDirection.Response">
-            <summary>
-            Response
-            </summary>
-        </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.TextSample">
             <summary>
             This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
-            </summary>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.TextSample.#ctor(System.String)">
-            <summary>
-            TextSample
-            </summary>
-            <param name="text"></param>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.TextSample.Equals(System.Object)">
-            <summary>
-            Equals
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.TextSample.GetHashCode">
-            <summary>
-            GetHashCode
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.TextSample.ToString">
-            <summary>
-            ToString
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:MongoDB.WebAPI.Areas.HelpPage.TextSample.Text">
-            <summary>
-            Text
             </summary>
         </member>
         <member name="T:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider">
@@ -907,48 +534,6 @@
             Initializes a new instance of the <see cref="T:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider"/> class.
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpControllerDescriptor)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="controllerDescriptor"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="actionDescriptor"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpParameterDescriptor)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="parameterDescriptor"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider.GetResponseDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)">
-            <summary>
-            GetResponseDocumentation
-            </summary>
-            <param name="actionDescriptor"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Reflection.MemberInfo)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="member"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MongoDB.WebAPI.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Type)">
-            <summary>
-            GetDocumentation
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
         </member>
         <member name="T:MongoDB.WebAPI.Controllers.AddPaymentInfoController">
             <summary>

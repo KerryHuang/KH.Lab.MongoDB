@@ -5,9 +5,6 @@ using System.Web.Http.Description;
 
 namespace MongoDB.WebAPI.Areas.HelpPage
 {
-    /// <summary>
-    /// ApiDescriptionExtensions
-    /// </summary>
     public static class ApiDescriptionExtensions
     {
         /// <summary>

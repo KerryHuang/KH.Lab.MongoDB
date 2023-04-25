@@ -7,19 +7,10 @@ namespace MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions
     /// </summary>
     public abstract class ModelDescription
     {
-        /// <summary>
-        /// Documentation
-        /// </summary>
         public string Documentation { get; set; }
 
-        /// <summary>
-        /// ModelType
-        /// </summary>
         public Type ModelType { get; set; }
 
-        /// <summary>
-        /// Name
-        /// </summary>
         public string Name { get; set; }
     }
 }

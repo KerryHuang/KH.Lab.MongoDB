@@ -16,9 +16,6 @@ using MongoDB.WebAPI.Areas.HelpPage.Models;
 
 namespace MongoDB.WebAPI.Areas.HelpPage
 {
-    /// <summary>
-    /// HelpPageConfigurationExtensions
-    /// </summary>
     public static class HelpPageConfigurationExtensions
     {
         private const string ApiModelPrefix = "MS_HelpPageApiModel_";

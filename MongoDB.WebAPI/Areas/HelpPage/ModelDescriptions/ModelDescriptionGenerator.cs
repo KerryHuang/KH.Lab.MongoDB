@@ -86,10 +86,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions
 
         private Lazy<IModelDocumentationProvider> _documentationProvider;
 
-        /// <summary>
-        /// ModelDescriptionGenerator
-        /// </summary>
-        /// <param name="config"></param>
         public ModelDescriptionGenerator(HttpConfiguration config)
         {
             if (config == null)
@@ -101,9 +97,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions
             GeneratedModels = new Dictionary<string, ModelDescription>(StringComparer.OrdinalIgnoreCase);
         }
 
-        /// <summary>
-        /// GeneratedModels
-        /// </summary>
         public Dictionary<string, ModelDescription> GeneratedModels { get; private set; }
 
         private IModelDocumentationProvider DocumentationProvider
@@ -114,11 +107,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage.ModelDescriptions
             }
         }
 
-        /// <summary>
-        /// GetOrCreateModelDescription
-        /// </summary>
-        /// <param name="modelType"></param>
-        /// <returns></returns>
         public ModelDescription GetOrCreateModelDescription(Type modelType)
         {
             if (modelType == null)

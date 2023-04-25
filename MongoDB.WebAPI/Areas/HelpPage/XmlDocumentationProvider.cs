@@ -35,33 +35,18 @@ namespace MongoDB.WebAPI.Areas.HelpPage
             _documentNavigator = xpath.CreateNavigator();
         }
 
-        /// <summary>
-        /// GetDocumentation
-        /// </summary>
-        /// <param name="controllerDescriptor"></param>
-        /// <returns></returns>
         public string GetDocumentation(HttpControllerDescriptor controllerDescriptor)
         {
             XPathNavigator typeNode = GetTypeNode(controllerDescriptor.ControllerType);
             return GetTagValue(typeNode, "summary");
         }
 
-        /// <summary>
-        /// GetDocumentation
-        /// </summary>
-        /// <param name="actionDescriptor"></param>
-        /// <returns></returns>
         public virtual string GetDocumentation(HttpActionDescriptor actionDescriptor)
         {
             XPathNavigator methodNode = GetMethodNode(actionDescriptor);
             return GetTagValue(methodNode, "summary");
         }
 
-        /// <summary>
-        /// GetDocumentation
-        /// </summary>
-        /// <param name="parameterDescriptor"></param>
-        /// <returns></returns>
         public virtual string GetDocumentation(HttpParameterDescriptor parameterDescriptor)
         {
             ReflectedHttpParameterDescriptor reflectedParameterDescriptor = parameterDescriptor as ReflectedHttpParameterDescriptor;
@@ -82,22 +67,12 @@ namespace MongoDB.WebAPI.Areas.HelpPage
             return null;
         }
 
-        /// <summary>
-        /// GetResponseDocumentation
-        /// </summary>
-        /// <param name="actionDescriptor"></param>
-        /// <returns></returns>
         public string GetResponseDocumentation(HttpActionDescriptor actionDescriptor)
         {
             XPathNavigator methodNode = GetMethodNode(actionDescriptor);
             return GetTagValue(methodNode, "returns");
         }
 
-        /// <summary>
-        /// GetDocumentation
-        /// </summary>
-        /// <param name="member"></param>
-        /// <returns></returns>
         public string GetDocumentation(MemberInfo member)
         {
             string memberName = String.Format(CultureInfo.InvariantCulture, "{0}.{1}", GetTypeName(member.DeclaringType), member.Name);
@@ -107,11 +82,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage
             return GetTagValue(propertyNode, "summary");
         }
 
-        /// <summary>
-        /// GetDocumentation
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
         public string GetDocumentation(Type type)
         {
             XPathNavigator typeNode = GetTypeNode(type);

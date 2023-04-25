@@ -123,9 +123,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage
         /// </summary>
         public HashSet<string> ParameterNames { get; private set; }
 
-        /// <summary>
-        /// ParameterType
-        /// </summary>
         public Type ParameterType { get; private set; }
 
         /// <summary>
@@ -133,11 +130,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage
         /// </summary>
         public SampleDirection? SampleDirection { get; private set; }
 
-        /// <summary>
-        /// Equals
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
         public override bool Equals(object obj)
         {
             HelpPageSampleKey otherKey = obj as HelpPageSampleKey;
@@ -154,10 +146,6 @@ namespace MongoDB.WebAPI.Areas.HelpPage
                 ParameterNames.SetEquals(otherKey.ParameterNames);
         }
 
-        /// <summary>
-        /// GetHashCode
-        /// </summary>
-        /// <returns></returns>
         public override int GetHashCode()
         {
             int hashCode = ControllerName.ToUpperInvariant().GetHashCode() ^ ActionName.ToUpperInvariant().GetHashCode();
